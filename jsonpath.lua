@@ -427,7 +427,7 @@ end
 
 
 
-function match_path(ast, path, parent, obj)
+local function match_path(ast, path, parent, obj)
     local descendants = false
     local ast_iter = ipairs(ast)
     local ast_key, ast_spec = ast_iter(ast, 0)
